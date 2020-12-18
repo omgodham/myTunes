@@ -1,0 +1,420 @@
+:root{
+    --darkgray:#252529;
+    --gray:#333;
+    --white:#fff;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+    font-family: 'PT Sans', sans-serif;
+  
+}
+.navbar{
+    position: fixed;
+width: 100%;
+height: 45px;
+background-color: var(--darkgray);
+}
+.menu{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+    justify-self: start;
+    width: 40%;
+    grid-column-gap: 0px;
+text-align: center;
+height: 100%;
+}
+.menu li{
+  padding-bottom: 2rem;
+
+}
+.menuLinks{
+position: relative;
+top: 15px;
+    color:#fff;
+    text-decoration: none;
+    padding-top: 5rem;
+}
+.menu li:hover{
+    cursor: pointer;
+    background-color: var(--gray);
+} 
+
+.menu-toggle{
+    display: none;
+position: absolute;
+top:14px;
+right:13px;
+cursor: pointer;
+}
+.bar{
+    margin-bottom:3px;
+    height: 4px;
+    width: 25px;
+    background-color: var(--white);
+}
+/*My Tunes Home Page*/
+.myTunes-home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-image: url(images/backimg.jpeg);
+    background-size:cover;
+    background-position: 5%;
+    color:var(--white);
+    text-align: center;
+    font-weight: bold;
+}
+.myTunes-home-descr{
+    width: 90%;
+    margin: auto auto;
+}
+.myTunes-home-heading{
+    line-height:4rem ;
+    font-size: 3.5rem;
+}
+.myTunes-home-heading-2{
+    margin-top: 3rem;
+    line-height:5rem ;
+    font-size:2rem;
+    margin-bottom: 1.5rem;
+}
+.myTunes-home-description{
+    line-height:2.5rem ;
+    font-size:1.2rem;
+}
+/*Description Section*/
+
+.description{
+    background-color: var(--darkgray);
+    width: 100%;
+    height: 90%;
+    color: var(--white);
+}
+.description-content{
+    width: 85%;
+    margin: 0 auto ;
+    text-align: center;
+}
+.description-content-heading{
+line-height: 6rem;
+padding-top: 1rem;
+font-size: 2.5rem;
+}
+.description-content-heading2{
+    line-height: 6rem;
+font-size: 2rem;
+margin-bottom: 1rem;
+}
+.description-content-paragraph{
+    line-height: 2rem;
+    font-size: 1.3rem;
+}
+.description-content-btn{
+    margin:2rem;
+    padding: 1rem;
+    border: none;
+    color: var(--white);
+    background-color:#b90415;
+    font-size: 1rem;
+}
+.description-content-btn:hover{
+    cursor: pointer;
+    background-color: #d3071b;
+}
+.description-img{
+    width: 95%;
+    height: 100%;
+    margin:2rem auto;
+}
+
+/* Collection */
+
+.collection{
+    width: 90%;
+    margin: 3rem auto;
+text-align: center;
+}
+.collection-heading{
+    color:var(--darkgray);
+    line-height: 3rem;
+    margin-bottom: 2rem;
+}
+.collection-paragraph{
+    font-weight: bolder;
+    color:#474747;
+    line-height: 2rem;
+    font-size: 1.4rem;
+    font-weight: 100;
+}
+.collection-btn{
+    margin-top: 2rem;
+    padding: 1.2rem;
+    background-color:#103063;
+    border:none;
+    color:var(--white);
+font-size: 1rem;
+}
+.collection-btn:hover{
+    background-color: #143f85;
+}
+.collection-img{
+    width: 100%;
+    height: 100%;
+}
+
+/* Speciality */
+.speciality{
+background-image:url("images/img3.jpeg") ;
+background-size: cover;
+height: 100%;
+background-position-y: 100%;
+margin-bottom: 5rem;
+}
+.speciality-content{
+    color: var(--white);
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    padding: 10% 0;
+}
+.speciality-content h1{
+    line-height: 7rem;
+}
+.speciality-content p{
+    line-height: 2rem;
+    font-size: 1.4rem;
+}
+
+/* Gift Cards */
+.gift-cards{
+    width: 100%;
+}
+.gift-card-content{
+    width: 85%;
+    margin:0 auto;
+display: grid;
+grid-template-columns: auto auto;
+grid-column-gap:5px;
+}
+.left-content-img{
+    height: 100%;
+    width: 100%;
+}
+.right-content-paragraph{
+    margin-top:2rem;
+    line-height: 1.5rem;
+}
+
+.right-content-reedem{
+    position: relative;
+    top:7px;
+        color:blue;
+}
+/* footer */
+
+.footer{
+    background-color: var(--darkgray);
+    color:var(--white);
+    width: 100%;
+    height: 100%;
+}
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    justify-self: center;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    width: 75%;
+    margin: 0 auto;
+}
+.footer-content span{
+    display: block;
+    line-height: 1.5rem;
+}
+.footer-content span:hover{
+    cursor: pointer;
+}
+.footer-descr h2{
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.footer-descr hr{
+    margin-bottom: 1rem;
+    width: 13rem;
+    opacity: .2;
+}
+/* Copyright */
+
+.copyright{
+    width: 100%;
+    line-height: 3.5rem;
+    background-color: var(--gray);
+    text-align: center;
+    color: var(--white);
+}
+
+
+ @media screen and (max-width:1025px){
+    .body{
+        font-size: 25px;
+    }
+    .myTunes-home-descr{
+        font-size: 3rem;
+    }
+}   
+
+@media screen and (max-width:768px){
+    .menu{
+        width: 70%;
+    }
+
+    .footer{
+        display: none;
+    }
+  .menuLinks{
+      font-size: 1.2rem;
+  }
+    .myTunes-home-heading{
+        line-height:3rem ;
+        font-size: 3.5rem;
+    }
+    .myTunes-home-heading-2{
+        margin-top: 2.5rem;
+        line-height:3rem ;
+        font-size:2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .description{
+        background-color: var(--darkgray);
+        width: 100%;
+        color: var(--white);
+    }
+    .description-content-heading{
+        line-height: 3rem;
+        padding-top: 1rem;
+        font-size: 2.5rem;
+        }
+        .description-content-heading2{
+            line-height: 6rem;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        }
+        .collection-img{
+            width: 100%;
+            height: 70%;
+            margin-top: 2rem;
+        }
+        .speciality-content h1{
+            line-height: 3rem;
+            font-size: 2.4rem;
+            margin-bottom: 4rem;
+        }
+        .speciality-content p{
+            line-height: 2rem;
+            font-size: 1.5rem;
+        }
+        .gift-card-content{
+            width: 85%;
+            margin:0 auto;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-column-gap:20px;
+        }
+
+        .gift-card-content{
+            width: 85%;
+            margin:0 auto;
+        display: grid;
+        grid-template-columns: auto;
+        grid-column-gap:5px;
+        }
+
+        .left-content-img{
+            padding-top: 0;
+            margin-bottom: 2rem;
+            height: 100%;
+            width: 100%;
+        }
+        .right-content-paragraph{
+            margin-top:2rem;
+            font-size: 1.2rem;
+            line-height: 1.5rem;
+        }
+        .copyright{
+            width: 100%;
+            line-height: 3.5rem;
+            background-color: var(--gray);
+            text-align: center;
+            color: var(--white);
+            margin-top: 2rem;
+        }
+}
+
+@media screen and (max-width:580px){
+    .myTunes-home{
+        height: 70vh;
+    }
+    .myTunes-home-description{
+        font-size: 1.5rem;
+    }
+    .menuLinks{
+        line-height: 1rem;
+        font-size: 1.5rem;
+        
+    }
+    .menu-toggle{
+        display: block;
+    }
+    .bar{
+        display: block;
+    }
+    .menu li:nth-of-type(1n+2){
+        display: none;/*Used to Display only limied li items*/
+    }
+    .right-content-heading{
+        font-size: 2rem;
+    }
+    .right-content-reedem{
+        font-size: 1.5rem;
+    }
+    .right-content-paragraph{
+        font-size:1.5rem;
+    }
+    .copyright{
+        font-size: 1.3rem;
+    }
+    .description-content-heading2{
+        line-height: 2.5rem;
+    }
+}
+
+@media screen and (max-width:418px){
+    .myTunes-home-heading{
+        margin-top: 40%;    
+    }
+    .navbar{
+        height: 50px;
+    }
+    .myTunes-home{
+        height: 100%;
+    }
+    .my-tunes-home{
+        background-size:100% 100%;
+    }
+    .menuLinks{
+        font-size: 1.3rem;
+    }
+    .description-content-heading2{
+        line-height: 3.2rem;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    }
+}
+
